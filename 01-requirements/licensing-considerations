@@ -1,0 +1,47 @@
+Licensing Considerations
+Purpose
+This project requires Microsoft Entra ID and Microsoft 365 capabilities to support user onboarding, authentication, authorization, and access management.
+
+Licensing Requirements
+The following services were required for the implementation:
+
+Microsoft Entra ID
+Microsoft 365 administrative portal access
+Microsoft Teams
+SharePoint Online
+OneDrive for Business
+Exchange Online
+Conditional Access (where available)
+Group-based licensing (where supported)
+Licence Assignment Strategy
+To support scalability and simplify administration, licences were assigned through security groups rather than directly to individual users.
+
+Example:
+
+Group	Purpose
+SG-LIC-M365-E5-SOC	Microsoft 365 licence assignment
+This approach reduces administrative effort and simplifies future onboarding and offboarding activities.
+
+Conditional Access Considerations
+Conditional Access functionality depends on the licence available within the lab tenant.
+
+Where Conditional Access was available:
+
+MFA was required for targeted users.
+Policies were initially deployed in Report-only mode.
+Emergency access accounts were excluded from targeting.
+Lab Limitations
+The available functionality depended on the licences assigned to the lab tenant.
+
+Any unavailable features were documented rather than simulated.
+
+Examples may include:
+
+Privileged Identity Management (PIM)
+Identity Governance
+Advanced Conditional Access features
+Microsoft Defender integration
+Security Considerations
+Licensing decisions were aligned with least-privilege principles.
+
+Users received only the services required for their role and no unnecessary administrative permissions were assigned.
